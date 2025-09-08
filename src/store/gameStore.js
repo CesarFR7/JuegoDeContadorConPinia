@@ -24,5 +24,8 @@ export const useGameStore = defineStore("gameStore", {
       console.log("attack: ", deffense);
       this.score -= deffense;
     },
+    resetScore() {
+      this.score = 50;
+    },
   },
 });
